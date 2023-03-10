@@ -94,7 +94,6 @@ video {
   box-sizing: border-box;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -261,7 +260,6 @@ body {
   opacity: 1;
   visibility: visible;
 }
-
 
 @media (max-width: 1920px) and (min-width: 821px){
   .main {
