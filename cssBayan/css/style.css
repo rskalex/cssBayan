@@ -213,19 +213,11 @@ label:hover .acc-img {
   color: black;
 }
 
-.item-contcol-close {
-  transition: all .3s linear;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-}
-
 .item-contcol-open {
   transition: all .3s linear;
 }
 
 .accordion-container:hover .acc-icon {
-  display: block;
   right: 0;
   opacity: 1;
   visibility: visible;
@@ -236,33 +228,20 @@ label:hover .acc-img {
   height: 100%;
 }
 
-.accordion-container input:checked + label > .acc-item > .acc-text > .acc-icon > .item-contcol-close {
-  transition: all .3s linear;
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-
 .accordion-container input:checked + label > .acc-item > .acc-text > .acc-icon > .item-contcol-open {
   transition: all .3s linear;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.acc-item:hover .item-contcol-close {
-  transition: all .3s linear;
-  display: block;
   opacity: 1;
   visibility: visible;
+  transform: rotate(45deg);
 }
 
 .acc-item:hover .item-contcol-open {
   transition: all .3s linear;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(45deg);
 }
+
 
  .accordion-container label:hover {
   color: #000;
