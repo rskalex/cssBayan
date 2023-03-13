@@ -88,11 +88,7 @@ video {
 }
 
 *,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+
 
 article,
 aside,
@@ -116,14 +112,6 @@ ul {
 blockquote,
 q {
   quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
 }
 
 table {
@@ -153,7 +141,6 @@ body {
 
 .item {
   text-align: center;
-  position: relative;
   border-top: 0.02em solid #ccc;
 }
 
@@ -189,7 +176,6 @@ label {
   line-height: 1.2em;
   font-size: 1.2em;
   font-weight: bold;
-  position: relative;
   transition: all 0.3s linear;
   opacity: 0;
   visibility: hidden;
@@ -206,7 +192,9 @@ label {
 .label-title{
   text-align: start;
 }
-
+.acc-img{
+  transition: all .3s linear;
+}
 img {
   margin: .7em auto;
   width: 50%;
@@ -281,6 +269,10 @@ label:hover .acc-img {
 }
 
  .accordion-container label:hover {
+  color: #000;
+}
+
+.accordion-container:hover label {
   color: #000;
 }
 
