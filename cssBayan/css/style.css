@@ -179,7 +179,8 @@ label {
 }
 
 .accordion-container input{
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 .acc-item{
   text-align: center;
@@ -218,7 +219,6 @@ label:hover .acc-img {
 }
 
 .accordion-container:hover .acc-icon {
-  right: 0;
   opacity: 1;
   visibility: visible;
 }
@@ -324,13 +324,17 @@ label:hover .acc-img {
     color: blue;
     cursor: auto;
   }
-  .acc-item:hover .item-contcol-close {
-    display: none;
-  }
   .acc-item:hover .item-contcol-open {
     display: block;
   }
   .acc-icon{
     display: block;
+  }
+  .accordion-container:hover label {
+    color: blue;
+  }
+  .acc-icon {
+    opacity: 1;
+    visibility: visible;
   }
 }
